@@ -1,4 +1,4 @@
-# Your Project Name
+# ImageFrameProcessor
 
 Description of your project.
 
@@ -13,5 +13,3 @@ Description of your project.
 2. Open the browser and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ## Deployment
-
-Deploy the application to Heroku following the Heroku deployment steps.

@@ -6,7 +6,7 @@ from flask_restful import Resource
 from app import api, app
 from app.image_processing import generate_frames
 from app.models import ImageData
-
+import os
 
 # Resource for the frames API
 class FramesResource(Resource):
@@ -25,5 +25,5 @@ class FramesResource(Resource):
 # API resources
 api.add_resource(FramesResource, '/get_frames')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(port=int(os.environ.get("PORT", 5000)), debug=True)
